@@ -1,0 +1,23 @@
+{
+  "name": "ArgosPhoneGap",
+  "version": "4.0.2",
+  "description": "Argos Team App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArgosTeam/ArgosPhoneGap#readme"
+  },
+  "author": "PhoneGap Team",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "bugs": {
+    "url": "https://github.com/ArgosTeam/ArgosPhoneGap/issues"
+  },
+  "homepage": "https://github.com/ArgosTeam/ArgosPhoneGap",
+  "dependencies": {
+    "cordova-plugin-nativesettings": "^1.1.0"
+  }
+}

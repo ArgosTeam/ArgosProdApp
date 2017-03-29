@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vue Stack 2.0</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<!--     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+ -->
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker-npm/build/css/bootstrap-datetimepicker.min.css"> -->
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/app.js"></script>
+    
+        <script type="text/javascript">
+
+        $(document).bind("mobileinit", function() {
+            $.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+        });
+
+    </script>
+</body>
+</html>
