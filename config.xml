@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.yaskone.argos" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>ArgosApp</name>
+    <name>ArgosProdApp</name>
     <description>
         Hello.
     </description>
@@ -12,7 +12,6 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="SplashScreenDelay" value="7000" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="Orientation" value="portrait" />
     <preference name="Fullscreen" value="true" />
 
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
