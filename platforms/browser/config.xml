@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.yaskone.argos" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.yaskone.argosprod" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="Camera">
         <param name="browser-package" value="Camera" />
     </feature>
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>ArgosApp</name>
+    <name>ArgosProdApp</name>
     <description>
-        Hello.
+        Argos Prod App
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
+    <access origin="*" />
+    <author email="arthur.ngovan@gmail.com" href="">
         YaskOne
     </author>
     <content src="index.html" />
     <icon src="icon.png" />
     <splash src="splashscreen" />
-    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -27,9 +27,10 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="SplashScreen" value="/images/browser/splashscreen.jpg" />
-    <preference name="SplashScreenBackgroundColor" value="green" />
-    <preference name="ShowSplashScreen" value="false" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="SplashScreen" value="/img/splashscreen.png" />
+    <preference name="ShowSplashScreen" value="true" />
     <preference name="SplashScreenWidth" value="600" />
     <preference name="SplashScreenHeight" value="300" />
 </widget>
