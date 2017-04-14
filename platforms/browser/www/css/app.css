@@ -12890,7 +12890,7 @@ input {
   top: 0px;
   padding-top: 180px;
   padding-bottom: 48px;
-  z-index: 8;
+  z-index: 3;
 }
 
 .airpop_section.v-enter {
@@ -13667,6 +13667,8 @@ input {
 #map_canvas {
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   position: absolute;
   z-index: 0;
 }
@@ -14065,6 +14067,55 @@ input {
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    settings
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.settings.nav_bar li {
+  display: -webkit-inline-box;
+  margin: 10px;
+  padding: 0;
+  height: 85px;
+  width: 85px;
+}
+
+.settings.nav_bar {
+  margin-bottom: 14px;
+  color: white;
+}
+
+.settings.nav_bar li img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.settings.nav_bar li i {
+  font-size: 28px;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  padding-top: 19px;
+  margin: 5px 2px;
+}
+
+.button_title {
+  color: white;
+  position: absolute;
+  bottom: -19px;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+.selected_button_white {
+  border: 2px solid #d71616;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     colors
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -14081,6 +14132,10 @@ input {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
+.selected_button_red {
+  border: 2px solid red;
+}
+
 .circle {
   height: 100%;
   width: 100%;
@@ -14147,6 +14202,7 @@ input {
   width: 100%;
   bottom: 48px;
   z-index: 5;
+  pointer-events: none;
 }
 
 .selector_div {

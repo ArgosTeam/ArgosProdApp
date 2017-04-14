@@ -78,7 +78,7 @@
     <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin" />
     </feature>
-    <name>ArgosProdApp</name>
+    <name>BEHIVE</name>
     <description>
         Argos Prod App
     </description>
