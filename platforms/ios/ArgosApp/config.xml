@@ -143,5 +143,4 @@
     <preference name="SplashScreenDelay" value="7000" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="Orientation" value="portrait" />
-    <preference name="Fullscreen" value="true" />
 </widget>
