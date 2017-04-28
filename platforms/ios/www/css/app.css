@@ -12617,10 +12617,6 @@ input {
   width: 100%;
 }
 
-.white_selected {
-  background: rgba(255, 255, 255, 0.5);
-}
-
 .rainbow_blue_background {
   background-image: -webkit-linear-gradient(left top, #84fab0, #8fd3f4);
   background-image: linear-gradient(to right bottom, #84fab0, #8fd3f4);
@@ -12652,20 +12648,32 @@ input {
 
 #side_nav_button {
   position: absolute;
-  left: 7px;
-  bottom: 14px;
+  left: 0;
+  bottom: 12px;
   font-size: 12px;
   z-index: 1000;
   color: gray;
+  height: 30px;
+  width: 30px;
+}
+
+#side_nav_button i {
+  margin: 12px;
 }
 
 #settings_button {
   position: absolute;
-  right: 7px;
-  bottom: 14px;
+  right: 0px;
+  bottom: 12px;
   font-size: 12px;
   z-index: 1000;
   color: gray;
+  height: 30px;
+  width: 36px;
+}
+
+#settings_button i {
+  margin: 12px;
 }
 
 .ctoast {
@@ -12686,6 +12694,7 @@ input {
 
 .airbar li {
   display: table-cell;
+  position: relative;
 }
 
 #locate_button, #notifs_button {
@@ -12709,6 +12718,19 @@ input {
   right: 20px;
   background: white;
   padding: 0px 11px;
+}
+
+#notifs_button .notifs_count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid wheat;
+  background: aliceblue;
+  font-size: 12px;
+  text-align: center;
 }
 
 .create_airpop {
@@ -12749,6 +12771,8 @@ input {
   margin: 0px;
   width: 100%;
   text-align: center;
+  table-layout: fixed;
+  overflow: hidden;
 }
 
 .nav_bar li {
@@ -12807,7 +12831,7 @@ input {
   padding: 3px;
   display: table;
   text-align: center;
-  background: rgba(58, 97, 128, 0.61);
+  background: rgba(44, 69, 88, 0.44);
 }
 
 .border_bottom {
@@ -13010,8 +13034,15 @@ input {
 
 .half_height {
   height: 50%;
-  overflow: hidden;
-  text-align: -webkit-left;
+  width: 100%;
+  font-size: 20px;
+  color: cadetblue;
+}
+
+.half_height.name {
+  color: cadetblue;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .user_pic {
@@ -13248,30 +13279,31 @@ input {
 
 .bottom_bar_section ul:not(.browser-default) {
   padding: 0px 30px;
+  margin-top: 3px;
 }
 
 .airbar {
   display: table;
   white-space: nowrap;
   overflow-x: auto;
-  margin-top: 7px;
+  margin-top: 6px;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 10;
+  table-layout: fixed;
 }
 
 .airbar li a {
-  height: 37px;
-  width: 37px;
+  height: 34px;
+  width: 34px;
   display: inline-block;
   border-radius: 50%;
 }
 
 .airbar li a i {
-  margin-top: 8px;
-  font-size: 17px;
-  color: inherit;
+  margin-top: 9px;
+  font-size: 14px;
 }
 
 .airbar li a .airnotifs {
@@ -13730,7 +13762,7 @@ input {
 }
 
 .profile_header .inner {
-  padding: 15px;
+  padding: 15px 10px;
 }
 
 .profile_header .inner {
@@ -13747,8 +13779,7 @@ input {
 
 .profile_infos_section {
   height: 110px;
-  left: 110px;
-  padding-left: 110px;
+  padding-left: 120px;
 }
 
 .profile_pic_section {
@@ -13761,11 +13792,6 @@ input {
   z-index: 100;
 }
 
-#user_infos_div {
-  text-align: left;
-  padding-left: 10px;
-}
-
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -13774,9 +13800,23 @@ input {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 .admin_profile_pic {
-  height: 30px;
-  width: 30px;
-  position: relative;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 50px;
+  z-index: 10;
+  border: 2px solid white;
+}
+
+.admin_profile_pic .user_name {
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -13px;
+  right: 0px;
 }
 
 /*
@@ -13818,6 +13858,7 @@ input {
 .overflowed {
   overflow: hidden;
   height: 100%;
+  position: relative;
 }
 
 .row {
@@ -13963,6 +14004,41 @@ input {
   position: absolute;
   left: -24px;
   color: #54a770;
+}
+
+.from_actions {
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 50px;
+  pointer-events: none;
+  text-align: center;
+}
+
+.from_actions .centered {
+  min-width: 50px;
+  max-width: 200px;
+  text-align: center;
+  display: -webkit-inline-box;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  padding: 2px;
+  pointer-events: all;
+}
+
+.from_actions .centered a {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: -webkit-inline-box;
+}
+
+.from_actions .centered a i {
+  font-size: 17px;
+  color: white;
+  margin: 13px 14px;
 }
 
 /*
@@ -14125,6 +14201,55 @@ input {
   background-image: linear-gradient(to top, #ffffff, transparent);
 }
 
+.selected_action_button {
+  color: blue;
+}
+
+.not_selected_action_button {
+  color: gray;
+}
+
+.nav_bar_selected_color {
+  color: wheat;
+}
+
+.nav_bar_color {
+  color: white;
+}
+
+.nav_bar_background {
+  background: #71707d;
+}
+
+.selection_background {
+  background: rgba(63, 70, 73, 0.73);
+}
+
+.dark_background, .airpop_section {
+  background: rgba(63, 70, 73, 0.73);
+}
+
+.airbutton_not_selected {
+  background: white;
+  border-color: transparent;
+}
+
+.airbutton_selected {
+  background: transparent;
+  border-color: transparent;
+}
+
+.airbutton_icon_not_selected {
+  background-image: -webkit-linear-gradient(left top, #84fab0, #8fd3f4);
+  background-image: linear-gradient(to right bottom, #84fab0, #8fd3f4);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.airbutton_icon_selected {
+  color: white;
+}
+
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -14132,6 +14257,20 @@ input {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
+.airbutton {
+  height: 38px;
+  width: 38px;
+  position: relative;
+  padding: 2px;
+  display: inline-block;
+}
+
+.action_naming {
+  margin-top: -2px;
+  color: lightgray;
+  font-size: 9px;
+}
+
 .selected_button_red {
   border: 2px solid red;
 }
@@ -14151,10 +14290,6 @@ input {
 
 .selectable {
   pointer-events: all;
-}
-
-.airbar li a:active {
-  background: black;
 }
 
 .right_actions {
@@ -14294,6 +14429,19 @@ input[type=text].cinput, input[type=text]:focus:not([readonly]).cinput {
   margin: 0px;
   font-size: 12px;
   height: 26px;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    global
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.header_infos {
+  text-align: left;
+  padding-left: 10px;
+  height: 100%;
 }
 
 /*
@@ -14562,6 +14710,29 @@ input[type=text].cinput, input[type=text]:focus:not([readonly]).cinput {
   100% {
     opacity: 1;
   }
+}
+
+.goslowTag .tagUp {
+  position: absolute;
+  padding-top: 14px;
+  font-size: 20px;
+  font-weight: normal;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: transparent;
+}
+
+.goslowTag .tagSelect {
+  font-size: 20px;
+}
+
+/*
+    tweak this to decorate your hastag
+*/
+.goslowTag .hashtag {
+  font-weight: 500;
+  color: black;
+  white-space: pre-wrap;
 }
 
 /*# sourceMappingURL=app.css.map */
