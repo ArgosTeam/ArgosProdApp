@@ -13335,9 +13335,8 @@ input {
   background-color: rgba(133, 197, 231, 0.7);
 }
 
-.not_selected_airbar {
+.airbar_action {
   color: #cdcdcd;
-  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .bottom_bar_section ul li {
