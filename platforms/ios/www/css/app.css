@@ -14248,7 +14248,7 @@ input {
   border-color: lightgreen;
 }
 
-.airbar li a i, .selected_action_button, .action_naming, .rainbow_blue_text {
+.selected_action_button, .action_naming, .rainbow_blue_text {
   background-image: -webkit-linear-gradient(left top, #84fab0, #8fd3f4);
   background-image: linear-gradient(to right bottom, #84fab0, #8fd3f4);
   color: transparent;
