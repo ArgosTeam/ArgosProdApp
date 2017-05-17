@@ -1,23 +1,30 @@
 {
-  "name": "ArgosProdApp",
-  "version": "4.0.2",
-  "description": "Argos Team App",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ArgosTeam/ArgosProdApp#readme"
-  },
-  "author": "PhoneGap Team",
-  "keywords": [
-    "ecosystem:phonegap",
-    "ecosystem:cordova",
-    "cordova:template",
-    "phonegap:template"
-  ],
-  "bugs": {
-    "url": "https://github.com/ArgosTeam/ArgosProdApp/issues"
-  },
-  "homepage": "https://github.com/ArgosTeam/ArgosProdApp",
-  "dependencies": {
-    "cordova-plugin-nativesettings": "^1.1.0"
-  }
+    "name": "ArgosProdApp",
+    "version": "4.0.2",
+    "description": "Argos Team App",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ArgosTeam/ArgosProdApp#readme"
+    },
+    "author": "PhoneGap Team",
+    "keywords": [
+        "ecosystem:phonegap",
+        "ecosystem:cordova",
+        "cordova:template",
+        "phonegap:template"
+    ],
+    "bugs": {
+        "url": "https://github.com/ArgosTeam/ArgosProdApp/issues"
+    },
+    "homepage": "https://github.com/ArgosTeam/ArgosProdApp",
+    "dependencies": {
+        "cordova-plugin-nativesettings": "^1.1.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-contacts": {
+                "CONTACTS_USAGE_DESCRIPTION": "in order to invite contacts in app"
+            }
+        }
+    }
 }

@@ -56,7 +56,9 @@
             "id": "cordova-plugin-contacts@~2.0.1"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "CONTACTS_USAGE_DESCRIPTION": "in order to invite contacts in app"
+        }
     },
     "cordova-plugin-device": {
         "source": {
