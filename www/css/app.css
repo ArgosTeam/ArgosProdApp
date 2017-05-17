@@ -14184,6 +14184,10 @@ input {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
+.light_color {
+  color: white;
+}
+
 .fade_white {
   background-image: -webkit-linear-gradient(bottom, #ffffff, transparent);
   background-image: linear-gradient(to top, #ffffff, transparent);
@@ -14317,7 +14321,7 @@ input {
 }
 
 .action_naming {
-  margin-top: -2px;
+  margin-top: -6px;
   color: lightgray;
   font-size: 9px;
 }
