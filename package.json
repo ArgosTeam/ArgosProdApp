@@ -23,7 +23,20 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-contacts": {
-                "CONTACTS_USAGE_DESCRIPTION": "in order to invite contacts in app"
+                "CONTACTS_USAGE_DESCRIPTION": "in order to invite friends into app"
+            },
+            "cordova-plugin-camera": {
+                "CAMERA_USAGE_DESCRIPTION": "to import pictures into app",
+                "PHOTOLIBRARY_USAGE_DESCRIPTION": "to import pictures into app"
+            },
+            "cordova-plugin-geolocation": {
+                "GEOLOCATION_USAGE_DESCRIPTION": "in order to display user pos on map, and to upload content geolocalized"
+            },
+            "cordova-plugin-media-capture": {
+                "CAMERA_USAGE_DESCRIPTION": "in order to upload content into app"
+            },
+            "cordova-plugin-media": {
+                "MICROPHONE_USAGE_DESCRIPTION": "maybe used to send audio record in app"
             }
         }
     }

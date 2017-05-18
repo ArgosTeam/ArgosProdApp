@@ -14,8 +14,8 @@
         },
         "is_top_level": true,
         "variables": {
-            "CAMERA_USAGE_DESCRIPTION": "needs camera to upload photos on the app's map",
-            "PHOTOLIBRARY_USAGE_DESCRIPTION": "needs library to choose profile pictures"
+            "CAMERA_USAGE_DESCRIPTION": "to import pictures into app",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": "to import pictures into app"
         }
     },
     "cordova-plugin-media-capture": {
@@ -24,7 +24,9 @@
             "id": "cordova-plugin-media-capture@~1.2.0"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "CAMERA_USAGE_DESCRIPTION": "in order to upload content into app"
+        }
     },
     "cordova-plugin-file": {
         "source": {
@@ -57,7 +59,7 @@
         },
         "is_top_level": true,
         "variables": {
-            "CONTACTS_USAGE_DESCRIPTION": "in order to invite contacts in app"
+            "CONTACTS_USAGE_DESCRIPTION": "in order to invite friends into app"
         }
     },
     "cordova-plugin-device": {
@@ -106,7 +108,9 @@
             "id": "cordova-plugin-geolocation@~2.1.0"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "GEOLOCATION_USAGE_DESCRIPTION": "in order to display user pos on map, and to upload content geolocalized"
+        }
     },
     "cordova-plugin-globalization": {
         "source": {
@@ -130,7 +134,9 @@
             "id": "cordova-plugin-media@~2.2.0"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "MICROPHONE_USAGE_DESCRIPTION": "maybe used to send audio record in app"
+        }
     },
     "cordova-plugin-network-information": {
         "source": {
