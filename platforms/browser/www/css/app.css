@@ -14521,79 +14521,79 @@ input[type].cinput, input[type=text].cinput, input[type=text]:focus:not([readonl
 }
 
 .animate_appear {
-  -webkit-animation: appear 0.3s;
+  -webkit-animation: appear 0.4s;
   visibility: visible;
   opacity: 1;
 }
 
 .animate_disappear {
-  -webkit-animation: disappear 0.3s;
+  -webkit-animation: disappear 0.4s;
   visibility: hidden;
   opacity: 0;
 }
 
 .animate_come_horizontal {
-  -webkit-animation: come 0.7s;
+  -webkit-animation: come 0.4s;
   margin-left: 0px;
   visibility: visible;
 }
 
 .animate_leave_horizontal {
-  -webkit-animation: leave 0.7s;
+  -webkit-animation: leave 0.4s;
   margin-left: 200%;
   visibility: hidden;
 }
 
 .top_out {
-  -webkit-animation: top_out 0.7s;
+  -webkit-animation: top_out 0.4s;
   top: -25%;
   visibility: hidden;
 }
 
 .out_top {
-  -webkit-animation: out_top 0.7s;
+  -webkit-animation: out_top 0.4s;
   top: 60px;
   visibility: visible;
 }
 
 .bot_out {
-  -webkit-animation: bot_out 0.7s;
+  -webkit-animation: bot_out 0.4s;
   top: -25%;
   visibility: hidden;
 }
 
 .out_bot {
-  -webkit-animation: out_bot 0.7s;
+  -webkit-animation: out_bot 0.4s;
   top: 50%;
   visibility: visible;
 }
 
 .top_mid {
-  -webkit-animation: top_mid 0.7s;
+  -webkit-animation: top_mid 0.4s;
   top: 25%;
   visibility: visible;
 }
 
 .mid_out {
-  -webkit-animation: mid_out 0.7s;
+  -webkit-animation: mid_out 0.4s;
   top: -25%;
   visibility: hidden;
 }
 
 .out_mid {
-  -webkit-animation: out_mid 0.7s;
+  -webkit-animation: out_mid 0.4s;
   top: 25%;
   visibility: visible;
 }
 
 .mid_bot {
-  -webkit-animation: mid_bot 0.7s;
+  -webkit-animation: mid_bot 0.4s;
   top: 50%;
   visibility: visible;
 }
 
 .bot_mid {
-  -webkit-animation: bot_mid 0.7s;
+  -webkit-animation: bot_mid 0.4s;
   top: 25%;
   visibility: visible;
 }
@@ -14772,8 +14772,8 @@ input[type].cinput, input[type=text].cinput, input[type=text]:focus:not([readonl
   padding-top: 14px;
   font-size: 20px;
   font-weight: normal;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   color: transparent;
 }
 
