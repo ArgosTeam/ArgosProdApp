@@ -12695,8 +12695,8 @@ input {
 }
 
 #locate_button {
-  left: 8px;
-  top: 108px;
+  right: 20px;
+  top: 67px;
   background: white;
   padding: 0px 7px;
 }
@@ -13025,6 +13025,7 @@ input {
   height: 50%;
   width: 100%;
   font-size: 13px;
+  position: relative;
   color: cadetblue;
 }
 
@@ -13032,6 +13033,12 @@ input {
   color: cadetblue;
   font-weight: 400;
   font-size: 20px;
+}
+
+.bottom_aligned {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 .user_pic {
@@ -14444,6 +14451,10 @@ input {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
+.mapboxgl-ctrl-top-left {
+  display: none;
+}
+
 .carousel .carousel-item {
   width: 150px;
   margin-left: 25px;
@@ -14484,6 +14495,27 @@ input[type].cinput, input[type=text].cinput, input[type=text]:focus:not([readonl
   margin: 0px;
   font-size: 12px;
   height: 26px;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    login
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.input_section {
+  background: rgba(255, 255, 255, 0.69);
+  padding: 0 5px;
+  border-radius: 7px;
+}
+
+input[type].ccinput {
+  height: 35px;
+  border-bottom: none;
+  box-shadow: none;
+  margin: 0px;
+  font-size: 12px;
 }
 
 /*
