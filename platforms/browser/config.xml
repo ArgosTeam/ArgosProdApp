@@ -27,7 +27,6 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="Orientation" value="portrait" />
     <preference name="SplashScreen" value="/img/splashscreen.png" />
     <preference name="ShowSplashScreen" value="true" />
     <preference name="SplashScreenWidth" value="600" />

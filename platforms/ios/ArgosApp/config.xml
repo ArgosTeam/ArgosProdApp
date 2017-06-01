@@ -142,5 +142,4 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="SplashScreenDelay" value="7000" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="Orientation" value="portrait" />
 </widget>
